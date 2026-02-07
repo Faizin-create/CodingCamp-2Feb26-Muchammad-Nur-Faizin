@@ -1,0 +1,140 @@
+:root {
+  --neon-lime: #CCFF00;
+  --danger-red: #FF4444;
+  --dark-bg: #121212;
+  --card-bg: #1e1e1e;
+  --input-bg: #262626;
+  --text-muted: #888888;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header h1 {
+  color: var(--neon-lime);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+main {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  width: 95%;
+  max-width: 600px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input {
+  background: var(--input-bg);
+  border: 1px solid #333;
+  color: white;
+  padding: 14px;
+  border-radius: 6px;
+  outline: none;
+}
+
+#todo-input {
+  flex: 2;
+}
+
+#date-input {
+  flex: 1;
+  color-scheme: dark;
+}
+
+#add-btn,
+#filter-btn {
+  background-color: var(--neon-lime);
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#add-btn {
+  padding: 0 25px;
+  font-size: 20px;
+}
+
+#filter-btn {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+#delete-all-btn {
+  background-color: var(--danger-red);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 900;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#add-btn:hover,
+#filter-btn:hover,
+#delete-all-btn:hover {
+  filter: brightness(0.9);
+}
+
+.action-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+td {
+  padding: 15px 10px;
+  text-align: left;
+  border-bottom: 1px solid #2a2a2a;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 40px;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.6;
+}

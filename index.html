@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List Web Application</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header></header>
+    <header>
+        <h1>To-do List</h1> 
+    </header>
 
-    <main></main>
+    <main>
+        <section class="input-group">
+            <input type="text" id="todo-input" placeholder="Add a todo">
+             <input type="date" id="date-input">
+              <button id="add-btn" type="button">+</button> 
+        </section>
 
-    <footer></footer>
-    
+        <section class="action-group">
+            <button id="filter-btn">FILTER</button> 
+            <button id="delete-all-btn">DELETE ALL</button>
+        </section>
 
-    <script src="script.js"></script>
+        <section class="list-group">
+            <table>
+                <thead>
+                    <tr>
+                        <th>TASK</th> 
+                        <th>DUE DATE</th> 
+                        <th>STATUS</th> 
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody id="todo-list">
+                    <tr id="no-task-row">
+                        <td colspan="4" style="text-align: center;">No task found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>Coding Camp RevoU 2026 - FaizCreate</footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
